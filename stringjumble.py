@@ -1,7 +1,7 @@
 """
 stringjumble.py
 Author: Eli Woloshin
-Credit: my brain
+Credit: my brain, stack overflow website
 
 Assignment:
 
@@ -29,5 +29,20 @@ import string
 
 string = input("Please enter a string of text (the bigger the better): ")
 
-string[::-1]
+print('You entered "'+string+'". Now jumble it: ')
+
+
+def reverse(string):
+    if len(string) <= 1:
+        return string
+
+    return reverse(string[1:]) + string[0]
+
+print(reverse(string))
+
+
+
+
+
+
 
