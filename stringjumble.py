@@ -41,6 +41,9 @@ def reverse(string):
 print(reverse(string))
 
 
-a
+print(reverse(str.split(string)))
+
+
+
 
 
