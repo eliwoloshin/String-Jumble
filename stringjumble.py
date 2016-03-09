@@ -41,7 +41,13 @@ def reverse(string):
 print(reverse(string))
 
 
-print(reverse(str.split(string)))
+for x in reverse(str.split(string)):
+    print("{0}".format(x[::1]),end=" ")
+
+print("")
+
+for x in str.split(string):
+    print("{0}".format(x[::-1]),end=" ")
 
 
 
