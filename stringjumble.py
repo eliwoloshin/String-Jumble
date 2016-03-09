@@ -32,16 +32,12 @@ string = input("Please enter a string of text (the bigger the better): ")
 print('You entered "'+string+'". Now jumble it: ')
 
 
-def reverse(string):
-    if len(string) <= 1:
-        return string
+reverse = "{0}".format(string[::-1])
 
-    return reverse(string[1:]) + string[0]
-
-print(reverse(string))
+print(reverse)
 
 
-for x in reverse(str.split(string)):
+for x in (str.split(reverse)):
     print("{0}".format(x[::1]),end=" ")
 
 print("")
