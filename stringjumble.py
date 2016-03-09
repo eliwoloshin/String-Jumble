@@ -38,7 +38,7 @@ print(reverse)
 
 
 for x in (str.split(reverse)):
-    print("{0}".format(x[::1]),end=" ")
+    print("{0}".format(x[::-1]),end=" ")
 
 print("")
 
